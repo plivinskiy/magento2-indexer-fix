@@ -13,6 +13,9 @@ use Magento\Framework\Mview\ViewInterface;
 
 class StoreChangelogVersionsSnapshot
 {
+    private CollectionFactory $collectionFactory;
+    private ChangelogVersionSnapshot $changelogVersionSnapshot;
+    private ResourceConnection $resourceConnection;
 
     /**
      * @param CollectionFactory $collectionFactory
@@ -20,9 +23,9 @@ class StoreChangelogVersionsSnapshot
      * @param ResourceConnection $resourceConnection
      */
     public function __construct(
-        private readonly CollectionFactory $collectionFactory,
-        private readonly ChangelogVersionSnapshot $changelogVersionSnapshot,
-        private readonly ResourceConnection $resourceConnection
+        CollectionFactory $collectionFactory,
+        ChangelogVersionSnapshot $changelogVersionSnapshot,
+        ResourceConnection $resourceConnection
     ) {
     }
 

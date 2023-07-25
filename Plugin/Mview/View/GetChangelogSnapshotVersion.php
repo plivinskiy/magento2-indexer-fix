@@ -8,12 +8,13 @@ use Magento\Framework\Mview\View\ChangelogInterface;
 
 class GetChangelogSnapshotVersion
 {
-
+    private ChangelogVersionSnapshot $changelogVersionSnapshot;
+    
     /**
      * @param ChangelogVersionSnapshot $changelogVersionSnapshot
      */
     public function __construct(
-        private readonly ChangelogVersionSnapshot $changelogVersionSnapshot
+        ChangelogVersionSnapshot $changelogVersionSnapshot
     ) {
     }
 
