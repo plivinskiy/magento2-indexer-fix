@@ -27,6 +27,9 @@ class StoreChangelogVersionsSnapshot
         ChangelogVersionSnapshot $changelogVersionSnapshot,
         ResourceConnection $resourceConnection
     ) {
+        $this->collectionFactory = $collectionFactory;
+        $this->changelogVersionSnapshot = $changelogVersionSnapshot;
+        $this->resourceConnection = $resourceConnection;
     }
 
     /**
