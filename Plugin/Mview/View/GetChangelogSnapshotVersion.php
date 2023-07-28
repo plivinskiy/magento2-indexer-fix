@@ -16,6 +16,7 @@ class GetChangelogSnapshotVersion
     public function __construct(
         ChangelogVersionSnapshot $changelogVersionSnapshot
     ) {
+        $this->changelogVersionSnapshot = $changelogVersionSnapshot;
     }
 
     /**
